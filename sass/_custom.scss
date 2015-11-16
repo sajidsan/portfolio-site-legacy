@@ -1,32 +1,79 @@
 
 
+//colors
+$teal: #e1f2ed;
+$grey: #666666;
+
+//type
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-weight: 400;
+$h1-font-family: 'Open Sans', sans-serif;
+$h1-font-weight: 700;
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+$h1-font-size: 75px;
+$h1-line-height: 100px;
+$h2-font-size: 50px;
+$h2-line-height: 60px;
+$h3-font-size: 16px;
+$h3-line-height: 20px;
+$h5-font-size: 14px;
+$h5-line-height: 16px;
+$h5-letter-spacing: 2px;
+
+
+
 // css from original work on site
-.testCSS {
-  width: 40px;
-}
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
   padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+
 }
 
 
 p {
-	font-size: 18px;
-	font-family: 'EB Garamond', serif;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $grey;
 
 }
 
 h1 {
-	font-size: 50px;
+	font-size: 75px;
+  font-family: $h1-font-family;
+  font-weight: $h1-font-weight;
+  font-size: $h1-font-size;
+  line-weight: $h1-line-height;
 }
 
 h2 {
+  @extend h1;
+  font-size: $h2-font-size;
+  line-weight: $h2-line-height;
+}
+
+h3 {
+  @extend h1;
+  font-size: $h3-font-size;
+  line-weight: $h3-line-height;
+}
+
+h4 {
+  @extend h1;
 }
 
 h5 {
-	color:grey;
+  @extend h1;
+  font-size: $h5-font-size;
+  line-weight: $h5-line-height;
+  letter-spacing: $h5-letter-spacing;
 }
 
 .thumb {
@@ -79,7 +126,7 @@ h5 {
 }
 
 div.teal {
-	background-color: #e1f2ed;
+	background-color: $teal;
 	padding-top: 50px;
 	padding-bottom: 80px;
 }
@@ -96,6 +143,30 @@ div.black {
 div.row {
 	margin-top: 20px;
 	margin-bottom: 30px;
+}
+
+div.circle {
+	margin:50px auto;
+	width:100px
+	;height:100px;
+	border-radius:50px;
+	font-size:20px;
+	color:#fff;line-height:100px
+	;text-align:center;background:#000
+}
+
+div.splash {
+  background-color: $teal;
+}
+
+div.testimonial {
+  background-color: $teal;
+}
+
+div.screenfiller {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  border: 15px solid orange
 }
 
 .shadow {
@@ -126,12 +197,3 @@ img.fill {
 h1.center {
 	text-align: center;
 }
-
-div.circle{
-	margin:50px auto;
-	width:100px
-	;height:100px;
-	border-radius:50px;
-	font-size:20px;
-	color:#fff;line-height:100px
-	;text-align:center;background:#000}

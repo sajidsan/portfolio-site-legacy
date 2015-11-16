@@ -59,9 +59,7 @@
     </div> <!--end row -->
   </div> <!-- container -->
 
-  <div class="black">
-    <?php include 'php/projectsFooter.php'; ?>
-  </div>
+  <?php include 'php/projectsFooter.php'; ?>
 
   <!--closing javascript -->
   <?php include 'php/js.php'; ?>

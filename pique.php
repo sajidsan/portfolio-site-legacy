@@ -107,10 +107,8 @@
     </div> <!--end row -->
   </div> <!-- container -->
 
-  <div class="black">
-    <!-- 3 x 2 grid of projects -->
-    <?php include 'php/projectsFooter.php'; ?>
-  </div>
+  <!-- 3 x 2 grid of projects -->
+  <?php include 'php/projectsFooter.php'; ?>
 
   <!--closing javascript -->
   <?php include 'php/js.php'; ?>

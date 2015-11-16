@@ -83,7 +83,7 @@ dfn {
 }
 
 /* line 136, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_normalize.scss */
-h1 {
+h1, h2, h3, h4, h5 {
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -1829,7 +1829,7 @@ hr {
 }
 
 /* line 9, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_type.scss */
-h1, h2, h3, h4, h5, h6,
+h1, h2, h3, h4, h5, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
@@ -1837,8 +1837,12 @@ h1, h2, h3, h4, h5, h6,
   color: inherit;
 }
 /* line 16, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_type.scss */
-h1 small,
-h1 .small, h2 small,
+h1 small, h2 small, h3 small, h4 small, h5 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small, h2 small,
 h2 .small, h3 small,
 h3 .small, h4 small,
 h4 .small, h5 small,
@@ -1857,15 +1861,19 @@ h6 .small,
 }
 
 /* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_type.scss */
-h1, .h1,
+h1, h2, h3, h4, h5, .h1,
 h2, .h2,
 h3, .h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 /* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_type.scss */
-h1 small,
-h1 .small, .h1 small,
+h1 small, h2 small, h3 small, h4 small, h5 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small, .h1 small,
 .h1 .small,
 h2 small,
 h2 .small, .h2 small,
@@ -1897,7 +1905,7 @@ h6 .small, .h6 small,
 }
 
 /* line 47, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_type.scss */
-h1, .h1 {
+h1, h2, h3, h4, h5, .h1 {
   font-size: 36px;
 }
 
@@ -6572,7 +6580,7 @@ a.badge:hover, a.badge:focus {
   background-color: #eeeeee;
 }
 /* line 13, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_jumbotron.scss */
-.jumbotron h1,
+.jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5,
 .jumbotron .h1 {
   color: inherit;
 }
@@ -6606,7 +6614,7 @@ a.badge:hover, a.badge:focus {
     padding-right: 60px;
   }
   /* line 47, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_jumbotron.scss */
-  .jumbotron h1,
+  .jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5,
   .jumbotron .h1 {
     font-size: 63px;
   }
@@ -8769,40 +8777,58 @@ button.close {
     display: none !important;
   }
 }
-/* line 4, ../sass/_custom.scss */
-.testCSS {
-  width: 40px;
-}
-
 /* Move down content because we have a fixed navbar that is 50px tall */
-/* line 9, ../sass/_custom.scss */
+/* line 30, ../sass/_custom.scss */
 body {
   padding-top: 50px;
   padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
 }
 
-/* line 15, ../sass/_custom.scss */
+/* line 41, ../sass/_custom.scss */
 p {
-  font-size: 18px;
-  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
 }
 
-/* line 21, ../sass/_custom.scss */
-h1 {
+/* line 48, ../sass/_custom.scss */
+h1, h2, h3, h4, h5 {
+  font-size: 75px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-weight: 100px;
+}
+
+/* line 56, ../sass/_custom.scss */
+h2 {
   font-size: 50px;
+  line-weight: 60px;
 }
 
-/* line 28, ../sass/_custom.scss */
+/* line 62, ../sass/_custom.scss */
+h3 {
+  font-size: 16px;
+  line-weight: 20px;
+}
+
+/* line 72, ../sass/_custom.scss */
 h5 {
-  color: grey;
+  font-size: 14px;
+  line-weight: 16px;
+  letter-spacing: 2px;
 }
 
-/* line 32, ../sass/_custom.scss */
+/* line 79, ../sass/_custom.scss */
 .thumb {
   width: 100%;
 }
 
-/* line 36, ../sass/_custom.scss */
+/* line 83, ../sass/_custom.scss */
 .jumbotron {
   background-size: cover;
   background-repeat: no-repeat;
@@ -8811,106 +8837,76 @@ h5 {
   margin: auto;
 }
 
-/* line 45, ../sass/_custom.scss */
+/* line 92, ../sass/_custom.scss */
 .jumbotron.home {
   background-image: url("../img/homeHeader.svg");
 }
 
-/* line 49, ../sass/_custom.scss */
+/* line 96, ../sass/_custom.scss */
 .jumbotron.index {
   background-image: url("../img/art1.jpg");
 }
 
-/* line 53, ../sass/_custom.scss */
+/* line 100, ../sass/_custom.scss */
 .jumbotron.agg {
   background-image: url("../img/aggHeader.png");
 }
 
-/* line 57, ../sass/_custom.scss */
+/* line 104, ../sass/_custom.scss */
 .jumbotron.pique {
   background-image: url("../img/piqueHeader.png");
 }
 
-/* line 61, ../sass/_custom.scss */
+/* line 108, ../sass/_custom.scss */
 .jumbotron.pique {
   background-image: url("../img/piqueHeader.png");
 }
 
-/* line 65, ../sass/_custom.scss */
+/* line 112, ../sass/_custom.scss */
 .jumbotron.alumni {
   background-image: url("../img/alumniHeader.png");
 }
 
-/* line 69, ../sass/_custom.scss */
+/* line 116, ../sass/_custom.scss */
 .jumbotron.yawn {
   background-image: url("../img/yawnHeader.png");
 }
 
-/* line 73, ../sass/_custom.scss */
+/* line 120, ../sass/_custom.scss */
 .jumbotron.dispatch {
   background-image: url("../img/dispatchHeader.png");
 }
 
-/* line 77, ../sass/_custom.scss */
+/* line 124, ../sass/_custom.scss */
 .jumbotron.ido {
   background-image: url("../img/idoHeader.png");
 }
 
-/* line 81, ../sass/_custom.scss */
+/* line 128, ../sass/_custom.scss */
 div.teal {
   background-color: #e1f2ed;
   padding-top: 50px;
   padding-bottom: 80px;
 }
 
-/* line 87, ../sass/_custom.scss */
+/* line 134, ../sass/_custom.scss */
 div.aggstock1 {
   background-image: url("../img/art1.jpg");
   height: auto;
 }
 
-/* line 92, ../sass/_custom.scss */
+/* line 139, ../sass/_custom.scss */
 div.black {
   background-color: black;
 }
 
-/* line 96, ../sass/_custom.scss */
+/* line 143, ../sass/_custom.scss */
 div.row {
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-/* line 101, ../sass/_custom.scss */
-.shadow {
-  box-shadow: 1px 3px 5px 3px #ccc;
-}
-
-/* line 105, ../sass/_custom.scss */
-.artifactpadded {
-  border-style: solid;
-  border-width: 1px;
-  border-color: grey;
-  padding: 30px;
-}
-
-/* line 113, ../sass/_custom.scss */
-.artifact {
-  border-style: solid;
-  border-width: 1px;
-  border-color: #dcdcdc;
-}
-
-/* line 119, ../sass/_custom.scss */
-img.fill {
-  width: 100%;
-}
-
-/* line 126, ../sass/_custom.scss */
-h1.center {
-  text-align: center;
-}
-
-/* line 130, ../sass/_custom.scss */
+/* line 148, ../sass/_custom.scss */
 div.circle {
   margin: 50px auto;
   width: 100px;
@@ -8921,4 +8917,54 @@ div.circle {
   line-height: 100px;
   text-align: center;
   background: #000;
+}
+
+/* line 158, ../sass/_custom.scss */
+div.splash {
+  background-color: #e1f2ed;
+}
+
+/* line 162, ../sass/_custom.scss */
+div.testimonial {
+  background-color: #e1f2ed;
+}
+
+/* line 166, ../sass/_custom.scss */
+div.screenfiller {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 15px solid orange;
+}
+
+/* line 172, ../sass/_custom.scss */
+.shadow {
+  box-shadow: 1px 3px 5px 3px #ccc;
+}
+
+/* line 176, ../sass/_custom.scss */
+.artifactpadded {
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  padding: 30px;
+}
+
+/* line 184, ../sass/_custom.scss */
+.artifact {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dcdcdc;
+}
+
+/* line 190, ../sass/_custom.scss */
+img.fill {
+  width: 100%;
+}
+
+/* line 197, ../sass/_custom.scss */
+h1.center, h2.center, h3.center, h4.center, h5.center {
+  text-align: center;
 }

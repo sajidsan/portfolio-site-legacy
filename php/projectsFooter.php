@@ -3,6 +3,7 @@
 
 
     <!-- 3 x 2 grid of projects -->
+  <div class="black">
     <div class="container wow fadeIn">
       <div class="row">
         <!-- Aggregator -->
@@ -52,3 +53,4 @@
       </footer>
 
     </div> <!-- /container -->
+  </div>
