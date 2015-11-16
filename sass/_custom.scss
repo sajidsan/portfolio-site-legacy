@@ -38,6 +38,7 @@ h5 {
 	background-repeat:no-repeat;
 	width: 100%vw;
 	height: 70vh;
+  margin:auto;
 
 }
 
@@ -70,11 +71,11 @@ h5 {
 }
 
 .jumbotron.dispatch {
-	background-image:url('../../img/dispatchHeader.png');
+	background-image:url('../img/dispatchHeader.png');
 }
 
 .jumbotron.ido {
-	background-image:url('../../img/idoHeader.png');
+	background-image:url('../img/idoHeader.png');
 }
 
 div.teal {
@@ -84,7 +85,7 @@ div.teal {
 }
 
 div.aggstock1 {
-	background-image:url('../../img/art1.jpg');
+	background-image:url('../img/art1.jpg');
 	height:auto;
 }
 
