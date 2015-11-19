@@ -40,7 +40,7 @@ Through these visits we also saw that the greatest opportunities were in trade s
           <p>As we moved into synthesis, we recognized that the types of activities participants engaged in could be categorized by the distinct phases of the trade show experience: preparation before the show, activities during the show, and the follow up afterwards.
           </p>
         </div>
-        <div class="col-md-9 artifactpadded shadow">
+        <div class="col-md-9 artifactpadded shadow1">
           <img class="fill wow fadeIn" src="img/aggAnala.png">
         </div>
       </div> <!--end row -->

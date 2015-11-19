@@ -8777,58 +8777,78 @@ button.close {
     display: none !important;
   }
 }
-/* Move down content because we have a fixed navbar that is 50px tall */
 /* line 30, ../sass/_custom.scss */
+html, body {
+  height: 100%;
+}
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+/* line 38, ../sass/_custom.scss */
 body {
   padding-top: 50px;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 24px;
+  font-family: "Gentium Basic", sans-serif;
+  line-height: 28px;
 }
 
-/* line 41, ../sass/_custom.scss */
+/* line 49, ../sass/_custom.scss */
 p {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 21px;
+  line-height: 28px;
   color: #666666;
 }
 
-/* line 48, ../sass/_custom.scss */
+/* line 56, ../sass/_custom.scss */
 h1, h2, h3, h4, h5 {
   font-size: 75px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open San", sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-weight: 100px;
 }
 
-/* line 56, ../sass/_custom.scss */
+/* line 64, ../sass/_custom.scss */
 h2 {
   font-size: 50px;
   line-weight: 60px;
 }
 
-/* line 62, ../sass/_custom.scss */
+/* line 70, ../sass/_custom.scss */
 h3 {
   font-size: 16px;
   line-weight: 20px;
 }
 
-/* line 72, ../sass/_custom.scss */
+/* line 80, ../sass/_custom.scss */
 h5 {
   font-size: 14px;
   line-weight: 16px;
   letter-spacing: 2px;
 }
 
-/* line 79, ../sass/_custom.scss */
+/* line 89, ../sass/_custom.scss */
+.grid {
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+}
+
+/* line 96, ../sass/_custom.scss */
+.gridline {
+  border-color: black;
+  border-radius: 1px;
+  height: 100%;
+  border-style: solid;
+}
+
+/* line 105, ../sass/_custom.scss */
 .thumb {
   width: 100%;
 }
 
-/* line 83, ../sass/_custom.scss */
+/* line 109, ../sass/_custom.scss */
 .jumbotron {
   background-size: cover;
   background-repeat: no-repeat;
@@ -8837,76 +8857,89 @@ h5 {
   margin: auto;
 }
 
-/* line 92, ../sass/_custom.scss */
+/* line 118, ../sass/_custom.scss */
 .jumbotron.home {
-  background-image: url("../img/homeHeader.svg");
+  background-size: cover;
+  height: 100%;
+  min-height: 600px;
 }
 
-/* line 96, ../sass/_custom.scss */
+/* line 125, ../sass/_custom.scss */
+.jumbotron-copy {
+  position: absolute;
+  transform: translateY(70%);
+}
+
+/* line 130, ../sass/_custom.scss */
 .jumbotron.index {
   background-image: url("../img/art1.jpg");
 }
 
-/* line 100, ../sass/_custom.scss */
+/* line 134, ../sass/_custom.scss */
 .jumbotron.agg {
   background-image: url("../img/aggHeader.png");
 }
 
-/* line 104, ../sass/_custom.scss */
+/* line 138, ../sass/_custom.scss */
+.jumbotron.jut {
+  background-image: url("../img/giphy.gif");
+}
+
+/* line 142, ../sass/_custom.scss */
 .jumbotron.pique {
   background-image: url("../img/piqueHeader.png");
 }
 
-/* line 108, ../sass/_custom.scss */
+/* line 146, ../sass/_custom.scss */
 .jumbotron.pique {
   background-image: url("../img/piqueHeader.png");
 }
 
-/* line 112, ../sass/_custom.scss */
+/* line 150, ../sass/_custom.scss */
 .jumbotron.alumni {
   background-image: url("../img/alumniHeader.png");
 }
 
-/* line 116, ../sass/_custom.scss */
+/* line 154, ../sass/_custom.scss */
 .jumbotron.yawn {
   background-image: url("../img/yawnHeader.png");
 }
 
-/* line 120, ../sass/_custom.scss */
+/* line 158, ../sass/_custom.scss */
 .jumbotron.dispatch {
   background-image: url("../img/dispatchHeader.png");
 }
 
-/* line 124, ../sass/_custom.scss */
+/* line 162, ../sass/_custom.scss */
 .jumbotron.ido {
   background-image: url("../img/idoHeader.png");
 }
 
-/* line 128, ../sass/_custom.scss */
+/* line 166, ../sass/_custom.scss */
 div.teal {
   background-color: #e1f2ed;
   padding-top: 50px;
   padding-bottom: 80px;
 }
 
-/* line 134, ../sass/_custom.scss */
+/* line 172, ../sass/_custom.scss */
 div.aggstock1 {
   background-image: url("../img/art1.jpg");
   height: auto;
 }
 
-/* line 139, ../sass/_custom.scss */
+/* line 177, ../sass/_custom.scss */
 div.black {
   background-color: black;
 }
 
-/* line 143, ../sass/_custom.scss */
+/* line 181, ../sass/_custom.scss */
 div.row {
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-/* line 148, ../sass/_custom.scss */
+/* line 186, ../sass/_custom.scss */
 div.circle {
   margin: 50px auto;
   width: 100px;
@@ -8919,17 +8952,17 @@ div.circle {
   background: #000;
 }
 
-/* line 158, ../sass/_custom.scss */
+/* line 196, ../sass/_custom.scss */
 div.splash {
   background-color: #e1f2ed;
 }
 
-/* line 162, ../sass/_custom.scss */
+/* line 200, ../sass/_custom.scss */
 div.testimonial {
   background-color: #e1f2ed;
 }
 
-/* line 166, ../sass/_custom.scss */
+/* line 204, ../sass/_custom.scss */
 div.screenfiller {
   position: absolute;
   top: 0;
@@ -8939,32 +8972,60 @@ div.screenfiller {
   border: 15px solid orange;
 }
 
-/* line 172, ../sass/_custom.scss */
-.shadow {
-  box-shadow: 1px 3px 5px 3px #ccc;
+/* line 211, ../sass/_custom.scss */
+img.centered {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 176, ../sass/_custom.scss */
+/* line 218, ../sass/_custom.scss */
+img.fill {
+  width: 100%;
+}
+
+/* line 222, ../sass/_custom.scss */
+.shadow1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 225, ../sass/_custom.scss */
+.shadow2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 228, ../sass/_custom.scss */
+.shadow3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 231, ../sass/_custom.scss */
+.shadow4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* line 234, ../sass/_custom.scss */
+.shadow5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+/* line 238, ../sass/_custom.scss */
 .artifactpadded {
   border-style: solid;
   border-width: 1px;
-  border-color: grey;
+  border-color: #EBEBEB;
   padding: 30px;
 }
 
-/* line 184, ../sass/_custom.scss */
+/* line 246, ../sass/_custom.scss */
 .artifact {
   border-style: solid;
   border-width: 1px;
   border-color: #dcdcdc;
 }
 
-/* line 190, ../sass/_custom.scss */
-img.fill {
-  width: 100%;
-}
-
-/* line 197, ../sass/_custom.scss */
+/* line 256, ../sass/_custom.scss */
 h1.center, h2.center, h3.center, h4.center, h5.center {
   text-align: center;
 }

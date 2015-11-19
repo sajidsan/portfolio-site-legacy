@@ -7,16 +7,15 @@
     <!-- navbar -->
     <?php include 'php/navbar.php'; ?>
 
-    <!--  screen filler experiment-->
-    <!-- <div class="screenfiller">
-    <div> -->
-
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron home hidden-xs">
       <div class="container">
         <div class="row">
             <div class="col-md-9">
-              <h1 class="lead wow fadeIn" style="color:white; position:absolute; top:20%">Hi I’m Sajid, a product designer with a foundation in design research </h1>
+              <div class="jumbotron-copy wow fadeIn">
+                <h1>Hi I’m Sajid, a product designer with a foundation in design research </h1>
+                <p>You can follow me @sajidresh and read my latest on medium<p>
+              </div>
             </div>
         </div>
       </div>
@@ -24,7 +23,7 @@
     <div class="splash">
       <div class="container">
         <div class="row">
-          <div class="col-md-10 col-md-offset-1">
+          <div class="col-md-12 wow fadeIn">
             <h1>I believe ruthlessly understanding users and their stories And I believe that an understanding of these stories is the heart of every great products. I believe in making to know how to make those people better products. I believe design can give a team shared understanding and I think the fuzzy side of shared of understanding is what leads a team to make great products.</h1>
           </div>
         </div>
@@ -39,10 +38,10 @@
           <h5>PRODUCT DESIGN</h5>
           <p>Over the past year at Jut, I built apps and introduced a team to a user centered design process.
           </p>
-          <button type="button" class="btn btn-primary btn-lg">See Work</button>
+          <a href="jut.html" class="button btn-primary btn-lg">See Work</a>
         </div>
         <div class="col-md-9">
-          <img class="fill" src="img/piqueGirls.png">
+          <img class="fill" src="img/jut-macbook-boards.png">
         </div>
       </div><!-- end row -->
     </div>
