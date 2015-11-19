@@ -11,20 +11,39 @@
     <div class="jumbotron home hidden-xs">
       <div class="container">
         <div class="row">
-            <div class="col-md-9">
-              <div class="jumbotron-copy wow fadeIn">
+            <div class="col-md-9 jumbotron-copy">
+              <div class="wow fadeIn">
                 <h1>Hi I’m Sajid, a product designer with a foundation in design research </h1>
                 <p>You can follow me @sajidresh and read my latest on medium<p>
               </div>
             </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="path">
+      <div class="container vertical-center">
+        <div class="row">
+          <div class="col-md-12 wow fadeIn">
+            <h2 class="path"><span class="path-primary">I believe in ruthlessly working to understanding users and their stories</span> <span class="path-secondary">and I believe that these stories lie at the heart of every great products.</span></h2>
+          </div>
         </div>
       </div>
     </div>
-    <div class="splash">
-      <div class="container">
+    <div class="path">
+      <div class="container vertical-center">
         <div class="row">
           <div class="col-md-12 wow fadeIn">
-            <h1>I believe ruthlessly understanding users and their stories And I believe that an understanding of these stories is the heart of every great products. I believe in making to know how to make those people better products. I believe design can give a team shared understanding and I think the fuzzy side of shared of understanding is what leads a team to make great products.</h1>
+            <h2 class="path"><span class="path-primary">I believe we learn through making <span class="path-secondary">and through the act of creation we can better understand our ideas and articulate our vision of the future.</span></span></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="path">
+      <div class="container vertical-center">
+        <div class="row">
+          <div class="col-md-12 wow fadeIn">
+            <h2 class="path"><span class="path-primary">I believe a shared understanding is the foundation of a great team </span> <span class="path-secondary">and a shared understanding of the world and its problems is what leads a team to make great products.</span></h2>
           </div>
         </div>
       </div>
@@ -32,21 +51,25 @@
 
     <!-- Module 1: JUT -->
     <div class="container">
-      <div class="row">
+      <div class="row case-study">
         <div class="col-md-3">
-          <h2>Jut</h2>
-          <h5>PRODUCT DESIGN</h5>
-          <p>Over the past year at Jut, I built apps and introduced a team to a user centered design process.
-          </p>
-          <a href="jut.html" class="button btn-primary btn-lg">See Work</a>
+          <div class="row">
+            <h2>Jut</h2>
+            <h5>PRODUCT DESIGN</h5>
+            <p>Over the past year at Jut, I built apps and introduced a team to a user centered design process.
+            </p>
+          </div>
+          <div class="row">
+            <a href="jut.html" class="button btn-primary btn-lg btn-outline">See Work</a>
+          </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 vertical-center">
           <img class="fill" src="img/jut-macbook-boards.png">
         </div>
       </div><!-- end row -->
     </div>
 
-    <div class="testimonial">
+    <div class="blockquote">
       <div class="container">
         <blockquote>
           <p>Sajid is an exceptionally talented designer. He actually can do it all; he has top notch interaction and visual design skills, a passion for user research, a mind for strategy and a curiosity that keeps him aware of the latest design trends and standards.</p>
@@ -57,37 +80,34 @@
 
     <!-- Module 2: Yahoo UX -->
     <div class="container">
-      <div class="row">
+      <div class="row case-study">
         <div class="col-md-3">
           <h2>Yahoo! Finance</h2>
           <h5>UX DESIGN</h5>
-          <p>Over the past year at Jut, I built apps and introduced a team to a user centered design process.
+          <p>Working as a UX designer with the Yahoo! Finance team allowed me hone my user centered approach to design while we developed web and mobile investing tools.
           </p>
-          <h3>Case Study</h3>
         </div>
-        <div class="col-md-9">
-          <img class="fill" src="img/piqueGirls.png">
+        <div class="col-md-9 vertical-center">
+          <img class="fill" src="img/yahoo-desktopMobile.png">
         </div>
       </div><!-- end row -->
     </div>
 
     <!-- Module 3: Yahoo Research -->
+    <div class="background-yahoo-research-intro white">
     <div class="container">
-      <div class="row">
+      <div class="row case-study">
         <div class="col-md-3">
           <h2>Yahoo! Research</h2>
           <h5>Design Research</h5>
-          <p>Over the past year at Jut, I built apps and introduced a team to a user centered design process.
+          <p class="white">While working as a design researcher, lead Yahoo! media teams through ethnographic research, prototyping of initial concepts, and evaluating of prototypes with rapid usability sessions.
           </p>
-          <h3>Case Study</h3>
-        </div>
-        <div class="col-md-9">
-          <img class="fill" src="img/piqueGirls.png">
         </div>
       </div><!-- end row -->
     </div>
+    </div>
 
-    <div class="testimonial">
+    <div class="blockquote">
       <div class="container">
         <blockquote>
           <p>Sajid lead the meaningful video project which set a new precedent for front end design research and innovation within the media team. It's success became a catalyst for a new way of working.</p>
@@ -98,16 +118,20 @@
 
     <!-- Module 3: Yahoo Research -->
     <div class="container">
-      <div class="row">
+      <div class="row case-study">
         <div class="col-md-3">
+          <div class="row">
           <h2>Studio for Design Research</h2>
           <h5>Design Research</h5>
           <p>While working with students from Hong Kong, the Netherlands, and Germany, I lead the development of a tool to help the Hong Kong design community collect and share insights.
           </p>
-          <h3>Case Study</h3>
+          </div>
+          <div class="row">
+            <a href="ido.html" class="button btn-primary btn-lg btn-outline">See Work</a>
+          </div>
         </div>
-        <div class="col-md-9">
-          <img class="fill" src="img/piqueGirls.png">
+        <div class="col-md-7 col-md-offset-1 vertical-center">
+          <img class="fill" src="img/ido-intro.png">
         </div>
       </div><!-- end row -->
     </div> <!-- end container -->

@@ -2,26 +2,28 @@
 
 //colors
 $teal: #e1f2ed;
-$grey: #666666;
+$thunder: #373037;
+
 //greys
 $gallery: #EBEBEB;
 $silver: #B8B8B8;
-
+$grey: #666666;
+$dusty: #999999;
 
 //type
-$base-font-family: 'Gentium Basic', sans-serif;
+$base-font-family: 'Open Sans', sans-serif;
 $base-font-weight: 400;
-$h1-font-family: 'Open San', sans-serif;
-$h1-font-weight: 700;
+$h1-font-family: 'Open Sans', sans-serif;
+$h1-font-weight: 300;
 
-$base-font-size: 21px;
+$base-font-size: 18px;
 $base-line-height: 28px;
 $h1-font-size: 75px;
 $h1-line-height: 100px;
 $h2-font-size: 50px;
 $h2-line-height: 60px;
-$h3-font-size: 16px;
-$h3-line-height: 20px;
+$h3-font-size: 30px;
+$h3-line-height: 40px;
 $h5-font-size: 14px;
 $h5-line-height: 16px;
 $h5-letter-spacing: 2px;
@@ -65,6 +67,21 @@ h2 {
   @extend h1;
   font-size: $h2-font-size;
   line-weight: $h2-line-height;
+}
+
+h2.path {
+  font-size: 40px;
+  line-height: 56px;
+}
+
+span.path-primary {
+  color:$gallery;
+  font-weight:600;
+}
+
+span.path-secondary {
+  color:$dusty;
+  font-weight:300;
 }
 
 h3 {
@@ -136,7 +153,7 @@ h5 {
 }
 
 .jumbotron.jut {
-	background-image:url('../img/giphy.gif');
+	background-image:url('../img/jut-hero-1.png');
 }
 
 .jumbotron.pique {
@@ -161,6 +178,56 @@ h5 {
 
 .jumbotron.ido {
 	background-image:url('../img/idoHeader.png');
+}
+
+div.background-yahoo-research-intro {
+	background-image:url('../img/yahoo-research-intro.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+div.background-yahoo-finance-intro {
+	background-image:url('../img/yahoo-finance-intro.svg');
+  background-size: 100%
+}
+
+// div.background-sfdr-intro {
+// 	background-image:url('../img/yahoo-finance-intro.svg');
+//   background-size: 100%
+// }
+
+div.blockquote {
+  background-color: $thunder;
+}
+
+blockquote {
+  color: $gallery;
+  border-left: 0px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: $gallery;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 300;
+  //font-style: italic;
+  color: $gallery;
+  display: inline;
+}
+
+blockquote footer {
+  color: $gallery;
+  font-size: 20px;
+  line-height:40px;
 }
 
 div.teal {
@@ -193,18 +260,31 @@ div.circle {
 	;text-align:center;background:#000
 }
 
-div.splash {
-  background-color: $teal;
+div.path {
+  background-color: $thunder;
+  height:800px;
 }
 
-div.testimonial {
-  background-color: $teal;
+div.case-study {
+  height: 800px;
 }
+
 
 div.screenfiller {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   border: 15px solid orange
+}
+
+div.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+div.vertical-center2 {
+  position: relative;
+  transform: translateY(50%);
 }
 
 //doesn't vertically center. yet.
@@ -249,10 +329,34 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	border-color:#dcdcdc;
 }
 
-
+.white {
+  color: $gallery;
+}
 
 
 
 h1.center {
 	text-align: center;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+    border: 1px solid $thunder;
+}
+
+.btn-primary.btn-outline {
+    color: $thunder;
+}
+
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    background-color: $thunder;
+    text-decoration: none;
+    color: $gallery;
 }
