@@ -8,18 +8,18 @@
     <!-- navbar -->
     <?php include 'php/navbar.php'; ?>
 
-    <div class="jumbotron jut hidden-xs">
+    <div class="jumbotron jut hidden-xs wow fadeIn">
     </div>
 
     <div class="container"> <!--******************************************-->
       <div class="row">
         <div class="col-md-5">
           <h2>Jut</h2>
-          <h5>PRODUCT DESIGN</h5>
-          <p>In 2013, Jut was founded to make use of their organization's massive amount of data by providing them with an environment where they could ingest any stream, modify and combine these different sources with a coding language, and make sense of it through visualizations and notifications.
+          <h5>PRODUCT DESIGN, 2014 - 2015</h5>
+          <p>In 2013, Jut was founded to help organizations make use of their data by providing them with an environment where they could ingest any source, modify and combine these different sources with a coding language, and make sense of this data through visualizations, notifications, and insights.
             <br>
             <br>
-          I joined in late 2014 after the team had built out the base technology and an interface to allow for users to work with this language.I spent the following 15 months helping Jut find its product market fit.
+          I joined in late 2014 after the team had built out the base technology and an interface to allow for users to work with Juttle, the programming language that the team was developing in house. I spent the following 15 months helping Jut find their product market fit.
           </p>
         </div>
         <!-- i can't get the image to vertically align properly, so I'm using a hack and hiding it at smaller dimensions -->
@@ -30,7 +30,7 @@
 
       <div class="row">
         <div class="col-md-12" style="padding-top:22px;">
-          <h3>Understanding the Problem
+          <h3>The power of a language, the accessibility of a GUI
           </h3>
           <p>
             After getting initial feedback from users on the proof of concept, the team knew one of the challenges would be convincing users to invest in making the switch to a new way of working that had a programming language at its core.
@@ -46,7 +46,7 @@
        <div class="row">
         <div class="col-md-4">
           <p>
-            One of our key insights was, while traditional gui interfaces allowed users to become quickly engaged, they often were limited as time goes on. The Jut language would allow for incredible amounts of flexibility but was incredibly difficult for users to become comfortable.
+            One of our key insights was, while traditional GUI's allowed users to become quickly engaged, they often were limited as time goes on. The Jut language would allow for incredible amounts of flexibility but was incredibly difficult for users to become comfortable.
           </p>
         </div>
         <div class="col-md-8">
@@ -73,7 +73,7 @@
     </div> <!--end row -->
       <div class="row">
         <div class="col-md-12">
-            <h3>Concept Development
+            <h3>Creating an App Ecosystem
             </h3>
         </div>
        <div class="col-md-4">
@@ -103,7 +103,7 @@
     </div> <!--end row -->
     <div class="row">
       <div class="col-md-12">
-        <h3>Developing a Framework
+        <h3>Developing a Design System
         </h3>
       </div>
       <div class="col-md-6">
@@ -123,7 +123,7 @@
    </div> <!--end row -->
    <div class="row">
      <div class="col-md-12">
-       <h3>Implementation and Iteration
+       <h3>Building a Culture of Iteration and Evaluation
        </h3>
        <p>
          A key aspect of introducing users to Jut was making sure that product was inviting and that switching to a new workflow would mean for ten times as much pleasure as pain. What this required was for us to build out an onboarding flow that could introduce our users to jut in an approachable way.
@@ -170,21 +170,77 @@
          <img class="fill wow fadeIn shadow2" src="img/jut-boards.png">
        </div>
      </div> <!--end row -->
+     <div class="row">
+       <div class="col-md-12">
+         <h3>The Jut Data Monster
+         </h3>
+         <p>
+           I also worked to humanize the product and bring in meaningful instance of delight while working on the more immediate, kpi driven problems. The most successful instance of this was the Creature Graph, a Jut mascot that could give you a quick indication of the health of your incoming data.
+         </p>
+       </div>
+     </div><!-- end row -->
+
+     <div class="row">
+       <div class="col-md-4">
+         <img class="fill wow fadeIn shadow2" src="img/jut-monster-wait.gif">
+       </div>
+       <div class="col-md-4">
+         <img class="fill wow fadeIn shadow2" src="img/jut-monster-data.gif">
+       </div>
+       <div class="col-md-4">
+         <img class="fill wow fadeIn shadow2" src="img/jut-monster-error.gif">
+       </div>
+     </div> <!--end row -->
+     <div class="row">
+       <div class="col-md-12">
+         <img class="fill wow fadeIn shadow2" src="img/jut-dash-creature.png">
+       </div>
+     </div> <!--end row -->
 
 
     <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-          <p>
-            Want more? Check out a <a href="https://medium.com/@sajid_khan/of-monsters-and-data-mayhem-bd0f33cca980#.ax1g85kvr">write-up on bringing delight into our product</a> (fantastical creatures included)
-          </p>
+      <div class="col-md-12">
+          <h3>
+            Want more?Check out my write up on <br><a href="https://medium.com/@sajidresh/of-monsters-and-data-mayhem-bd0f33cca980#.2ur3x4iz9" target="_blank">building the Jut Data Monster</a>.
+          </h3>
       </div>
       <div class="col-md-4">
       </div>
     </div> <!--end row -->
+
   </div> <!-- end container ******************************************-->
 
-  <!-- 3 x 2 grid of projects -->
-  <?php include 'php/projectsFooter.php'; ?>
+  <!-- 3 x 1 grid of projects -->
+  <div class="footer">
+    <div class="container wow fadeIn white">
+      <!-- grid of old projects -->
+      <div class="row">
+
+        <div class="col-md-4">
+          <h5>CONCEPT DEVELOPMENT<h5>
+          <a href="agg1.html">
+          <img class="thumb" src="img/thumbs/tile-agg.png"></a>
+        </div>
+
+        <div class="col-md-4">
+          <h5>CREATING USER EMPATHY<h5>
+          <a href="ido.html">
+          <img class="thumb" src="img/thumbs/tile-ido.png"></a>
+        </div>
+
+        <div class="col-md-4">
+          <h5>RESEARCH + WORKSHOP DESIGN<h5>
+          <a href="y-research.html">
+          <img class="thumb" src="img/thumbs/tile-yResearch.png"></a>
+        </div>
+      </div>
+
+      <footer>
+        <h5 class="white">&copy; Sajid Reshamwala 2015</h5>
+      </footer>
+
+    </div> <!-- /container -->
+  </div>
 
   <!--closing javascript -->
   <?php include 'php/js.php'; ?>

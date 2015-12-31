@@ -3,18 +3,37 @@
 //colors
 $teal: #e1f2ed;
 $thunder: #373037;
+//chartreuse!!!
+$chartreuse: #D5ED3C;
+$purple: #8151E1;
+$teal: #57D3D9;
+$carrot: #FF8F34;
+$hotpink: #FF55A2;
+$tan: #F3DCB3;
+$canary: #FFF700;
+$chai: #FAF1C1;
+$mint: #BEEB9F;
 
-//greys
+
+//greys, lightest to darkest
 $gallery: #EBEBEB;
 $silver: #B8B8B8;
-$grey: #666666;
+//dark grey for type
 $dusty: #999999;
+$grey: #666666;
+$emperor: #555555;
+$darkgrey: #333333;
+
+
+$valencia: #D94141;
+
 
 //type
 $base-font-family: 'Open Sans', sans-serif;
 $base-font-weight: 400;
 $h1-font-family: 'Open Sans', sans-serif;
 $h1-font-weight: 300;
+$extra-bold: 800;
 
 $base-font-size: 18px;
 $base-line-height: 28px;
@@ -33,7 +52,19 @@ html, body {
   height: 100%;
 }
 
-// css from original work on site
+// disable wow animations at smaller dimensions i.e. mobile
+@media (max-width: 640px)
+{
+  .wow {
+    visibility: visible !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+}
+
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 
@@ -47,6 +78,15 @@ body {
 
 }
 
+a {
+  color: $valencia;
+}
+
+a:hover {
+  color: $valencia;
+  text-decoration: underline;
+
+}
 
 p {
   font-size: $base-font-size;
@@ -56,7 +96,7 @@ p {
 }
 
 h1 {
-	font-size: 75px;
+	font-size: $h1-font-size;
   font-family: $h1-font-family;
   font-weight: $h1-font-weight;
   font-size: $h1-font-size;
@@ -101,26 +141,22 @@ h5 {
   letter-spacing: $h5-letter-spacing;
 }
 
-
-//background grid experiment. not working yet.
-.grid {
-  position: absolute;
-  width:100%;
-  height:1000px;
-
+.extra-bold {
+  font-weight: 800;
 }
 
-.gridline {
-  border-color:black;
-  border-radius:1px;
-  height:100%;
-  border-style: solid;
-
-}
-//end grid
-
-.thumb {
+img.thumb {
 	width:100%;
+  opacity: 0.8;
+
+  -webkit-transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
+}
+
+img.thumb:hover {
+  opacity: 1;
 }
 
 .jumbotron {
@@ -133,7 +169,8 @@ h5 {
 }
 
 .jumbotron.home {
-	//background-image:url('../img/homeHeader.svg');
+	background-image:url('../img/topo.png');
+  background-color:$tan;
   background-size:cover;
   height:100%;
   min-height: 600px;
@@ -141,23 +178,26 @@ h5 {
 
 .jumbotron-copy {
   position: absolute;
-  transform: translateY(70%);
+  transform: translateY(80%);
 }
 
 .jumbotron.index {
 	background-image:url('../img/art1.jpg');
 }
 
+.jumbotron.ido {
+	background-image:url('../img/idoHeader.png');
+}
+.jumbotron.y-research {
+	background-image:url('../img/yr-comicCon.png');
+}
+
 .jumbotron.agg {
-	background-image:url('../img/aggHeader.png');
+	background-image:url('../img/agg-header.png');
 }
 
 .jumbotron.jut {
 	background-image:url('../img/jut-hero-1.png');
-}
-
-.jumbotron.pique {
-	background-image:url('../img/piqueHeader.png');
 }
 
 .jumbotron.pique {
@@ -176,9 +216,12 @@ h5 {
 	background-image:url('../img/dispatchHeader.png');
 }
 
-.jumbotron.ido {
-	background-image:url('../img/idoHeader.png');
+.jumbotron h1 {
+  color: $darkgrey;
+  font-size:30px;
 }
+
+
 
 div.background-yahoo-research-intro {
 	background-image:url('../img/yahoo-research-intro.png');
@@ -197,14 +240,19 @@ div.background-yahoo-finance-intro {
 // }
 
 div.blockquote {
-  background-color: $thunder;
+  background-image:url('../img/topo.png');
+  background-color: $darkgrey;
+  background-size: cover;
+	background-repeat:no-repeat;
+  width:100%;
+
 }
 
 blockquote {
   color: $gallery;
   border-left: 0px solid #ccc;
   margin: 1.5em 10px;
-  padding: 0.5em 10px;
+  padding: 20px 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
@@ -224,6 +272,7 @@ blockquote p {
   display: inline;
 }
 
+
 blockquote footer {
   color: $gallery;
   font-size: 20px;
@@ -241,8 +290,11 @@ div.aggstock1 {
 	height:auto;
 }
 
-div.black {
-	background-color: black;
+div.footer {
+  background-image:url('../img/topo.png');
+  background-color: $darkgrey;
+  background-size: cover;
+	background-repeat:no-repeat;
 }
 
 div.row {
@@ -250,19 +302,23 @@ div.row {
 	margin-bottom: 30px;
 }
 
-div.circle {
-	margin:50px auto;
-	width:100px
-	;height:100px;
-	border-radius:50px;
-	font-size:20px;
-	color:#fff;line-height:100px
-	;text-align:center;background:#000
+
+//trying to make a responsive circle, doesn't quite work.
+.circle1 {
+	border-radius: 50%;
+  width: 100%;
+  padding-bottom:0%;
+  background: white;
 }
 
+
+
 div.path {
-  background-color: $thunder;
-  height:800px;
+  background-image:url('../img/topo.png');
+  background-color: $darkgrey;
+  background-size: cover;
+	background-repeat:no-repeat;
+  height:700px;
 }
 
 div.case-study {
@@ -299,6 +355,10 @@ img.fill {
 	width:100%;
 }
 
+
+
+
+
 .shadow1 {
 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
@@ -333,8 +393,6 @@ box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   color: $gallery;
 }
 
-
-
 h1.center {
 	text-align: center;
 }
@@ -343,12 +401,25 @@ h1.center {
     background-color: transparent;
     color: inherit;
     transition: all .5s;
-    border: 1px solid $thunder;
+    border: 1px solid $darkgrey;
 }
 
 .btn-primary.btn-outline {
-    color: $thunder;
+    color: $darkgrey;
+
 }
+
+a.white.btn-primary.btn-outline {
+  color: white;
+  border-color: white;
+}
+
+a.white.btn-primary.btn-outline:hover {
+  color: $darkgrey;
+  border-color: $darkgrey;
+  background-color: white;
+}
+
 
 
 .btn-primary.btn-outline:hover,
@@ -356,6 +427,16 @@ h1.center {
 .btn-info.btn-outline:hover,
 .btn-warning.btn-outline:hover,
 .btn-danger.btn-outline:hover {
+    background-color: $thunder;
+    text-decoration: none;
+    color: $gallery;
+}
+
+.btn-primary.btn-outline:focus,
+.btn-success.btn-outline:focus,
+.btn-info.btn-outline:focus,
+.btn-warning.btn-outline:focus,
+.btn-danger.btn-outline:focus {
     background-color: $thunder;
     text-decoration: none;
     color: $gallery;

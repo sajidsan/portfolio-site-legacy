@@ -16,6 +16,7 @@
           <ul class="nav navbar-nav">
             <li><a href="about.html">About</a></li>
             <li><a href="mailto:sajidresh@gmail.com">Contact</a></li>
+            <li><a href="files/SKRresume_s2015.pdf">Resume</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>

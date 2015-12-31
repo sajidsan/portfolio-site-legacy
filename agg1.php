@@ -7,16 +7,16 @@
 
     <!-- navbar -->
     <?php include 'php/navbar.php'; ?>
-
-    <div class="jumbotron agg hidden-xs">
+    <div class="jumbotron agg hidden-xs wow fadeIn">
     </div>
 
     <div class="container">
+
       <div class="row">
         <div class="col-md-5">
-          <h5>UX AND PROTOTYPING</h5>
-          <h1>The Aggregator</h1>
-          <p>Trade shows remain to be a key domain for people to connect in an industry. But with more competition coming from online alternatives such as Alibaba, what unique value do tradeshows provide and what are the opportunities ot accentuate them? The Aggregator, the result of a project initiated by the Chicago Tradeshow Alliance, was our chance to find out.
+          <h2>Aggregator</h2>
+          <h5>GRADUATE PROJECT 2010</h5>
+          <p>With more competition coming from online alternatives such as Alibaba, what unique value do tradeshows provide and what are the opportunities ot accentuate them? The Aggregator, the result of a project initiated by the Chicago Tradeshow Alliance, was our chance to find out.
         </p>
         </div>
         <div class="col-md-7">
@@ -56,7 +56,6 @@ Through these visits we also saw that the greatest opportunities were in trade s
          <img class="fill" src="img/aggStock3.png">
       </div>
     </div> <!-- end row -->
-
 
   </div> <!-- end container -->
   <div class="row">
@@ -123,18 +122,47 @@ the three primary modes of our application.
           <img class="fill wow fadeIn" src="img/aggWires2.png">
       </div>
     </div> <!--end row -->
-
     <div class="row">
-      <div class="col-md-8">
-          <h1>Like it? Hate it? Just Curious?</h1>
-          <p>Drop me an <a href="mailto:sajkhanresh@yahoo.com">email</a>  to find out more.</p>
+      <div class="col-md-12">
+        <h3> Still Curious? <a href="mailto:sajidresh@gmail.com"><br>Drop me an email</a> and tell me what you think.</h3>
       </div>
-      <div class="col-md-4">
-      </div>
-    </div> <!--end row -->
+    </div> <!-- end row -->
   </div> <!-- container -->
-  <!-- 3 x 2 grid of projects -->
-  <?php include 'php/projectsFooter.php'; ?>
+
+  <!-- 3 x 1 grid of projects -->
+  <div class="footer">
+    <div class="container wow fadeIn white">
+      <!-- grid of old projects -->
+      <div class="row">
+        <div class="col-md-12">
+
+        </div>
+        <div class="col-md-4">
+          <h5>PRODUCT DESIGN<h5>
+          <a href="jut.html">
+          <img class="thumb tile" src="img/thumbs/tile-jut.png"></a>
+        </div>
+
+
+        <div class="col-md-4">
+          <h5>CREATING USER EMPATHY<h5>
+          <a href="ido.html">
+          <img class="thumb" src="img/thumbs/tile-ido.png"></a>
+        </div>
+
+        <div class="col-md-4">
+          <h5>RESEARCH + WORKSHOP DESIGN<h5>
+          <a href="y-research.html">
+          <img class="thumb" src="img/thumbs/tile-yResearch.png"></a>
+        </div>
+      </div>
+
+      <footer>
+        <h5 class="white">&copy; Sajid Reshamwala 2015</h5>
+      </footer>
+
+    </div> <!-- /container -->
+  </div>
 
   <!--closing javascript -->
   <?php include 'php/js.php'; ?>
