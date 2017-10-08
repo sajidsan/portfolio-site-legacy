@@ -58,4 +58,10 @@
       </footer>
 
     </div> <!-- /container -->
+
+    <!--jquery.js-->
+    <script src="js/jquery.js"></script>
+
+    <!--animatescroll.js-->
+    <script src="js/animatescroll.js"></script>
   </div>

@@ -37,4 +37,8 @@
       </footer>
 
     </div> <!-- /container -->
+    
+
+    <!--jquery.js-->
+    <script src="js/jquery.js"></script>
   </div>

@@ -20,12 +20,13 @@
     <div class="jumbotron home hidden-xs">
       <div class="container">
         <div class="row">
-            <div class="col-md-9 jumbotron-copy">
-              <div class="wow fadeIn">
-                <h1 class="">Hi, I’m Sajid,<br> a <span class="extra-bold">product designer</span> with a foundation in <span class="">design research</span>.</h1>
-                <p>You can follow me <a href="https://twitter.com/sajidresh" target="_blank">@sajidresh</a> and read my latest on <a href="https://medium.com/@sajidresh" target="_blank">medium</a>.<p>
-              </div>
+          <div class="col-md-9 jumbotron-copy">
+            <div class="wow fadeIn">
+              <h1 class="">Hi, I’m Sajid,<br> a <span class="extra-bold">product designer</span> with a foundation in <span class="">design research</span>.</h1>
+              <p>You can follow me <a href="https://twitter.com/sajidresh" target="_blank">@sajidresh</a> and read my latest on <a href="https://medium.com/@sajidresh" target="_blank">medium</a>.<p>
             </div>
+            <!-- <a onclick="$('#go-to-test').animatescroll();">Go to Element</a> -->
+          </div>
           </div>
       </div>
     </div>
@@ -59,7 +60,7 @@
     </div>
 
     <!-- Module 1: JUT -->
-    <div class="container">
+    <div class="container" id="go-to-test">
       <div class="row case-study">
         <div class="col-md-3 wow fadeIn">
           <div class="row">

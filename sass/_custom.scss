@@ -14,6 +14,17 @@ $canary: #FFF700;
 $chai: #FAF1C1;
 $mint: #BEEB9F;
 
+//gradient mixin:
+@mixin gradient-hero() {
+  -moz-linear-gradient: left, rgba(250,87,231,1) 0%, rgba(255,97,123,1) 87%, rgba(255,97,123,1) 100%;
+  -webkit-gradient:left top, right top, color-stop(0%, rgba(250,87,231,1)), color-stop(87%, rgba(255,97,123,1)), color-stop(100%, rgba(255,97,123,1));
+  -webkit-linear-gradient:left, rgba(250,87,231,1) 0%, rgba(255,97,123,1) 87%, rgba(255,97,123,1) 100%;
+  -o-linear-gradient:left, rgba(250,87,231,1) 0%, rgba(255,97,123,1) 87%, rgba(255,97,123,1) 100%;
+  -ms-linear-gradient:left, rgba(250,87,231,1) 0%, rgba(255,97,123,1) 87%, rgba(255,97,123,1) 100%;
+  linear-gradient: to right, rgba(250,87,231,1) 0%, rgba(255,97,123,1) 87%, rgba(255,97,123,1) 100%;
+}
+
+
 
 //greys, lightest to darkest
 $gallery: #EBEBEB;
@@ -79,11 +90,11 @@ body {
 }
 
 a {
-  color: $valencia;
+  color: #FF2F8D;
 }
 
 a:hover {
-  color: $valencia;
+  color: #FF2F8D;
   text-decoration: underline;
 
 }
@@ -91,7 +102,7 @@ a:hover {
 p {
   font-size: $base-font-size;
   line-height: $base-line-height;
-  color: $grey;
+  color: $darkgrey;
 
 }
 
@@ -168,17 +179,43 @@ img.thumb:hover {
 
 }
 
+// .jumbotron.home {
+//   background: rgba(250,87,231,1);
+//   background-image:url('../img/topo.png');
+//   background: -moz-linear-gradient(left, rgba(250,87,231,1) 0%, rgba(255,97,123,1) 87%, rgba(255,97,123,1) 100%);
+//   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(250,87,231,1)), color-stop(87%, rgba(255,97,123,1)), color-stop(100%, rgba(255,97,123,1)));
+//   background: -webkit-linear-gradient(left, rgba(250,87,231,1) 0%, rgba(255,97,123,1) 87%, rgba(255,97,123,1) 100%);
+//   background: -o-linear-gradient(left, rgba(250,87,231,1) 0%, rgba(255,97,123,1) 87%, rgba(255,97,123,1) 100%);
+//   background: -ms-linear-gradient(left, rgba(250,87,231,1) 0%, rgba(255,97,123,1) 87%, rgba(255,97,123,1) 100%);
+//   background: linear-gradient(to right, rgba(250,87,231,1) 0%, rgba(255,97,123,1) 87%, rgba(255,97,123,1) 100%);
+//   background-blend-mode: screen, normal, normal, normal, normal, normal, normal;
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa57e7', endColorstr='#ff617b', GradientType=1 );
+//   background-size:cover;
+//   height:100%;
+//   min-height: 600px;
+// }
+
 .jumbotron.home {
-	background-image:url('../img/topo.png');
-  background-color:$tan;
+  background: rgba(250,87,231,1);
+  background:
+  url('../img/topo.png'),
+  linear-gradient(to right, rgba(250,87,231,1) 0%, rgba(255,97,123,1) 87%, rgba(255,97,123,1) 100%);
+  background-blend-mode: multiply, normal;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa57e7', endColorstr='#ff617b', GradientType=1 );
   background-size:cover;
   height:100%;
   min-height: 600px;
 }
 
+.jumbotron.home a {
+  color: $darkgrey;
+  font-weight: 700;
+  text-decoration:underline;
+}
+
 .jumbotron-copy {
   position: absolute;
-  transform: translateY(80%);
+  transform: translateY(70%);
 }
 
 .jumbotron.index {
@@ -218,7 +255,7 @@ img.thumb:hover {
 
 .jumbotron h1 {
   color: $darkgrey;
-  font-size:30px;
+
 }
 
 

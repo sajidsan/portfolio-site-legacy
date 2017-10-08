@@ -162,6 +162,11 @@
   </div><!-- end row -->
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
+        <img class="fill wow fadeIn shadow2" src="img/jut-onboarding.png">
+      </div>
+     </div> <!--end row -->
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
         <img class="fill wow fadeIn shadow2" src="img/jut-explorer.png">
       </div>
      </div> <!--end row -->
