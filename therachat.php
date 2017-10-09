@@ -1,74 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <!-- head -->
-  <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="img/favicon.png">
-
-    <title>Sajid: Product Designer</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="stylesheets/styles.css" rel="stylesheet" type="text/css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <!-- animate.css for simple animations http://daneden.github.io/animate.css/ -->
-    <link rel="stylesheet" href="stylesheets/animate.css" type="text/css">
-
-    <!--Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:800,300,600italic,700,400,600s' rel='stylesheet' type='text/css'>
-    <!-- wow.js -->
-    <script src="js/wow.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-
-
-
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-</html>
+  <?php include 'php/head.php'; ?>
 
   <body>
 
     <!-- navbar -->
-    <!DOCTYPE html>
-<html lang="en">
-
-
-    <div class="navbar navbar-inverse navbar-fixed-top" >
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Sajid Reshamwala</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="about.html">About</a></li>
-            <li><a href="mailto:sajidresh@gmail.com">Contact</a></li>
-            <li><a href="files/SKRresume_s2015.pdf">Resume</a></li>
-          </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
-
-</html>
+    <?php include 'php/navbar.php'; ?>
 
     <div class="jumbotron jut hidden-xs wow fadeIn">
     </div>
@@ -76,8 +14,8 @@
     <div class="container"> <!--******************************************-->
       <div class="row">
         <div class="col-md-5">
-          <h2>Jut</h2>
-          <h5>PRODUCT DESIGN, 2014 - 2015</h5>
+          <h2>Therachat</h2>
+          <h5>PRODUCT DESIGN, 2016 - Present</h5>
           <p>In 2013, Jut was founded to help organizations make use of their data by providing them with an environment where they could ingest any source, modify and combine these different sources with a coding language, and make sense of this data through visualizations, notifications, and insights.
             <br>
             <br>
@@ -310,15 +248,6 @@
   </div>
 
   <!--closing javascript -->
-  <!DOCTYPE html>
-<html lang="en">
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-
-</html>
+  <?php include 'php/js.php'; ?>
   </body>
 </html>

@@ -54,7 +54,7 @@
       </div> -->
 
       <footer>
-        <h5 class="white">&copy; Sajid Reshamwala 2015</h5>
+        <h5 class="white">&copy; Sajid Reshamwala 2017</h5>
       </footer>
 
     </div> <!-- /container -->

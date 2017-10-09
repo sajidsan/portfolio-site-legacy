@@ -59,14 +59,45 @@
       </div>
     </div>
 
-    <!-- Module 1: JUT -->
+    <!-- Module 1: THERACHAT -->
+    <div class="container" id="go-to-test">
+      <div class="row case-study">
+        <div class="col-md-3 wow fadeIn">
+          <div class="row">
+            <h2>Therachat</h2>
+            <h5>PRODUCT DESIGN, 2016 - Present</h5>
+            <p>At Therachat, I guided our team through 6 months of design sprints, helped us find a new product direction, and am leading the design of our mobile and webapps from the ground up.
+            </p>
+          </div>
+          <div class="row wow fadeIn">
+            <a href="therachat.html" class="button btn-primary btn-lg btn-outline">See Work</a>
+          </div>
+        </div>
+        <div class="col-md-9 vertical-center hidden-xs wow fadeIn">
+          <a href="therachat.html">
+            <img class="fill" src="img/therachat-cover.png">
+          </a>
+        </div>
+      </div><!-- end row -->
+    </div>
+
+    <div class="blockquote">
+      <div class="container">
+        <blockquote class="wow fadeIn">
+          <p>Sajid is an exceptionally talented designer. He actually can do it all; he has top notch interaction and visual design skills, a passion for user research, a mind for strategy and a curiosity that keeps him aware of the latest design trends and standards.</p>
+          <footer>Tim Sheiner, <cite title="Source Title">Former Director of Design at Jut</cite></footer>
+        </blockquote>
+      </div>
+    </div>
+
+    <!-- Module 2: JUT -->
     <div class="container" id="go-to-test">
       <div class="row case-study">
         <div class="col-md-3 wow fadeIn">
           <div class="row">
             <h2>Jut</h2>
             <h5>PRODUCT DESIGN, 2014 - 2015</h5>
-            <p>Over the past year at Jut, I built apps and introduced a team to user centered design.
+            <p>At Jut I launched apps and introduced a team to user centered design.
             </p>
           </div>
           <div class="row wow fadeIn">
@@ -84,13 +115,13 @@
     <div class="blockquote">
       <div class="container">
         <blockquote class="wow fadeIn">
-          <p>Sajid is an exceptionally talented designer. He actually can do it all; he has top notch interaction and visual design skills, a passion for user research, a mind for strategy and a curiosity that keeps him aware of the latest design trends and standards.</p>
-          <footer>Tim Sheiner, <cite title="Source Title">Director of Design at Jut</cite></footer>
+          <p>Sajid collaborates brilliantly with product and development teams to produce beautiful and high-impact designs. He knows how to place himself at the center the user's perspective and always seems to strike a good balance between user research and gut instincts.</p>
+          <footer>Steve McCanne, <cite title="Source Title">former CEO at Jut</cite></footer>
         </blockquote>
       </div>
     </div>
 
-    <!-- Module 2: Yahoo UX -->
+    <!-- Module 3: Yahoo UX -->
     <div class="container">
       <div class="row case-study hidden-xs">
         <div class="col-md-3 wow fadeIn">
@@ -107,7 +138,7 @@
       </div><!-- end row -->
     </div>
 
-    <!-- Module 3: Yahoo Research -->
+    <!-- Module 4: Yahoo Research -->
     <div class="background-yahoo-research-intro white">
       <div class="container">
         <div class="row case-study wow fadeIn">
@@ -133,7 +164,7 @@
       </div>
     </div>
 
-    <!-- Module 4: Studio for Design Research -->
+    <!-- Module 5: Studio for Design Research -->
     <div class="container">
       <div class="row case-study">
         <div class="col-md-3">
